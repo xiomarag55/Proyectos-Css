@@ -1,0 +1,101 @@
+*,*:before,*:after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    padding: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-color: black;
+}
+.container{
+    display:flex;
+    margin: auto;
+    margin-bottom: 100px;
+    width: 940px;
+   
+    
+    
+}
+.card{
+    height: 650px;
+    overflow: hidden;
+    width: 350px;
+    margin: auto;
+    padding: 20px 30px;
+    border-radius: 2%;
+    border: 1px solid #fff;
+    transition: all .4s ease-in-out;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 3);
+    text-align: center;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    
+}
+.card:hover{
+    height: 600px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0, 5);
+}
+.card-encabezado img{
+    position: relative;
+    border-radius: 50%;
+    display: block;
+    height: 220px;
+    width: 200px;
+    border-top: 8px solid #fff;
+    border-bottom: 20px solid #fff;
+    object-fit: cover;
+    margin: 20px auto;
+    transition: all o.3s ease;
+}
+.card-encabezado{
+    position: relative;
+    
+}
+.card-encabezado:after, .card-encabezado:before{
+    content: '';
+    position: absolute;
+    opacity: .7;
+}
+.card-encabezado:after{
+    border-radius: 50%;
+    z-index: 20;
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    right: 25px;
+}
+.card-encabezado:before{
+    width: 70px;
+    height: 70px;
+    bottom: 0;
+    left: -10px;
+    border-radius: 20px;
+    background-color: rgba(238, 042, 98);
+    transform: rotate(120deg);
+}
+.info-personal1{
+    font-size: 25px;
+    font-weight: bold;
+}
+.info-personal2{
+    font-size: 20px;
+    font-weight: bold;
+}
+.info-personal3{
+    font-size: 19px;
+    text-align: justify;
+    font-weight: 900;
+}
